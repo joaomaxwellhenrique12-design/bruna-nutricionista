@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bruna Souza | Nutricionista – consultas online e presenciais</title>
+<meta name="description" content="Bruna Souza, nutricionista. Consulta nutricional online e presencial, com acompanhamento individualizado. Solicite seu horário pelo WhatsApp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fff;--surface:#fff;--sage:#EDE5DA;--beige:#EDE5DA;--gold:#B79B70;--olive:#8B735E;--olive-d:#292929;--sand:#FAF9F6;--brown:#8B735E;--ink:#292929;--muted:#6b625a;--line:#EDE5DA;--wa:#292929;--wa-t:#fff;--btn-t:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Manrope,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,7vw,4.9rem)}h2{font-size:clamp(2rem,4.5vw,3.1rem)}h3{font-size:1.6rem}
+h2::after{content:"";display:block;width:44px;height:2px;background:var(--gold);margin-top:20px}
+.final h2::after{margin-inline:auto}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--brown);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:92px 0}
+.lead{color:var(--muted);max-width:56ch;margin-top:16px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;text-decoration:none}
+.nav nav{display:flex;gap:26px;font-size:.95rem}
+.nav nav a{text-decoration:none;color:var(--muted)}.nav nav a:hover{color:var(--ink)}
+@media(max-width:820px){.nav nav{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;padding:14px 26px;border-radius:999px;font:700 .98rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--brown);border-color:var(--brown)}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--beige)}
+.btn.ghost:hover{background:var(--sand);color:var(--ink);border-color:var(--brown)}
+.btn.wa{background:var(--brown);border-color:var(--brown);color:#fff}
+.btn.wa:hover{background:var(--ink);border-color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.row{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+/* hero */
+.hero{padding:56px 0 96px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .8fr;gap:72px;align-items:center}
+.hero .name{font-weight:700;color:var(--brown);margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--olive)}
+.hero p.lead{font-size:1.15rem}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 28px 28px;background:linear-gradient(165deg,#fff,var(--beige));display:grid;place-items:center;text-align:center;padding:30px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(41,41,41,.3)}
+.arch::before{content:"";position:absolute;inset:14px;border:1px solid var(--gold);border-radius:999px 999px 18px 18px}
+.arch span{position:relative;font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:var(--olive-d);max-width:15ch}
+.arch svg{display:block;margin:0 auto 12px}
+.leaf{animation:sway 6s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes sway{50%{transform:rotate(4deg)}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:340px;margin:0 auto}section{padding:68px 0}}
+/* about */
+.about{background:var(--sand)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.photo{aspect-ratio:1;border-radius:28px;background:var(--beige);display:grid;place-items:center;color:var(--brown);font-family:"Cormorant Garamond",serif;font-size:1.2rem;text-align:center;padding:20px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.fields div{background:var(--surface);border:1.5px dashed var(--sage);border-radius:16px;padding:14px 16px;font-size:.9rem;color:var(--muted)}
+.fields b{display:block;color:var(--ink);font-size:.95rem}
+@media(max-width:820px){.about .wrap{grid-template-columns:1fr}.fields{grid-template-columns:1fr}}
+/* cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:34px;box-shadow:0 12px 30px -24px rgba(41,41,41,.18)}
+.card ul{padding-left:20px;color:var(--muted);margin:18px 0 22px}
+.tbd{font-size:.88rem;color:var(--brown);border-top:1px dashed var(--line);padding-top:14px;margin-bottom:22px}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+/* booking */
+.book{background:linear-gradient(180deg,var(--bg),var(--sand))}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:38px;margin-top:40px;max-width:820px;box-shadow:0 20px 50px -34px rgba(41,41,41,.18)}
+.steps{display:flex;gap:8px;margin-bottom:28px;font-size:.88rem;color:var(--muted)}
+.steps div{flex:1;border-top:4px solid var(--line);padding-top:8px}.steps .on{border-color:var(--olive);color:var(--ink);font-weight:700}
+fieldset{border:0;padding:0;margin:0 0 22px}legend{font-weight:700;margin-bottom:10px;padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{border:1.5px solid var(--line);border-radius:999px;padding:11px 20px;cursor:pointer;transition:.2s;background:var(--bg)}
+.opts input:checked+label{background:var(--olive);color:var(--btn-t);border-color:var(--olive)}
+.opts input:focus-visible+label{outline:3px solid var(--brown);outline-offset:2px}
+.fld{display:block;margin-bottom:16px}.fld span{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input[type=text],input[type=tel],input[type=email],input[type=date],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:13px 15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.two{grid-template-columns:1fr}.form{padding:24px}}
+.err{color:#b3402e;font-size:.88rem;min-height:1.2em;margin-top:4px}
+.note{font-size:.9rem;color:var(--muted);background:var(--sand);border:1px solid var(--beige);border-radius:14px;padding:14px 16px;margin:18px 0}
+.pane[hidden]{display:none}
+.review{margin:0 0 20px;padding:0;list-style:none}.review li{padding:11px 0;border-bottom:1px solid var(--line)}.review b{display:inline-block;min-width:130px}
+.actions{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+/* testimonials */
+.demo{display:inline-block;background:var(--sand);color:var(--brown);border-radius:999px;padding:5px 14px;font-size:.85rem;font-weight:700;margin-top:18px}
+.tcard{border-style:dashed;border-color:var(--sage)}
+.tcard .stars{color:var(--brown);letter-spacing:3px}
+.tcard blockquote{margin:12px 0;color:var(--muted);font-style:italic}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:40px 0 36px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr}}
+/* instagram */
+.insta{background:var(--sand);color:var(--ink)}
+.insta .lead{color:inherit;opacity:.9}
+.insta .btn:hover{color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
+.tiles div{aspect-ratio:1;border-radius:18px;background:var(--beige);color:var(--brown);display:grid;place-items:center;font-size:.85rem;text-align:center;padding:10px;opacity:.9}
+@media(min-width:821px){.tiles{grid-template-columns:repeat(6,1fr)}}
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:0 24px;margin-top:12px;max-width:820px}
+summary{cursor:pointer;font-weight:700;padding:20px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--brown);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);padding-bottom:20px}
+/* final */
+.final{text-align:center;background:var(--sand)}.final .lead{margin-inline:auto}.final .row{justify-content:center}
+footer{background:var(--olive-d);color:#eee9dc;padding:56px 0 100px;font-size:.93rem}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
+footer a{display:block;text-decoration:none;opacity:.85;margin-bottom:6px}footer a:hover{opacity:1}
+footer .brand{display:block;margin-bottom:10px;opacity:1}
+footer button{background:none;border:0;color:inherit;font:inherit;padding:0;text-decoration:underline;cursor:pointer;opacity:.85}
+.small{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.2);padding-top:20px;opacity:.8;font-size:.85rem}
+@media(max-width:820px){footer .wrap{grid-template-columns:1fr}}
+.fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:transform .2s}
+.fab:hover{transform:scale(1.07)}
+dialog{border:0;border-radius:24px;max-width:540px;width:calc(100% - 40px);padding:32px;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(41,41,41,.5)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* animações e agendamento v2 */
+.js .rv{opacity:0;translate:0 20px;transition:opacity .9s cubic-bezier(.2,.7,.2,1),translate .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;translate:0 0;transition-delay:var(--d,0s)}
+.js .hero .wrap>div:first-child>*,.js .arch{animation:heroIn 1s cubic-bezier(.2,.7,.2,1) both}
+.js .hero .wrap>div:first-child>:nth-child(1){animation-delay:.1s}
+.js .hero .wrap>div:first-child>:nth-child(2){animation-delay:.25s}
+.js .hero .wrap>div:first-child>:nth-child(3){animation-delay:.42s}
+.js .hero .wrap>div:first-child>:nth-child(4){animation-delay:.58s}
+.js .arch{animation-delay:.35s}
+@keyframes heroIn{from{opacity:0;translate:0 22px}}
+@keyframes paneIn{from{opacity:0;translate:0 12px}}
+.pane:not([hidden]){animation:paneIn .45s ease both}
+.btn{transition:transform .25s,background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn:hover{box-shadow:0 12px 24px -14px rgba(41,41,41,.5)}
+.card,details{transition:transform .35s ease,box-shadow .35s ease,border-color .3s}
+.nav nav a,footer a{transition:color .25s,opacity .25s}
+.arch span,.photo{transition:transform 1s ease}
+@media(hover:hover){
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 40px -26px rgba(41,41,41,.3);border-color:var(--gold)}
+details:hover{border-color:var(--gold)}
+.arch:hover span{transform:scale(1.06)}
+.photo:hover{transform:scale(1.025)}}
+.form{scroll-margin-top:90px}
+.bsteps{display:flex;gap:8px;list-style:none;padding:0;margin:0 0 28px;font-size:.85rem;color:var(--muted)}
+.bsteps li{flex:1;border-top:4px solid var(--line);padding-top:8px;transition:border-color .4s,color .4s}
+.bsteps li.on{border-color:var(--brown);color:var(--ink);font-weight:700}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.opt{font:inherit;color:inherit;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:24px;padding:30px;cursor:pointer;display:flex;flex-direction:column;gap:10px;align-items:flex-start;transition:border-color .3s,background .3s,transform .3s,box-shadow .3s}
+.opt svg{color:var(--brown)}.opt p{color:var(--muted);margin-bottom:8px}
+.opt:hover{border-color:var(--brown);transform:translateY(-3px)}
+.opt.sel{border-color:var(--brown);background:var(--sand);box-shadow:inset 0 0 0 1px var(--brown)}
+.opt.sel .btn{background:var(--brown);border-color:var(--brown)}
+.chosen{margin-bottom:20px;color:var(--muted)}.chosen b{color:var(--ink)}
+select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:13px 15px}
+input:focus,select:focus,textarea:focus{border-color:var(--brown);outline:none}
+input[aria-invalid=true],select[aria-invalid=true]{border-color:#b3402e}
+.err{display:block}
+@media(max-width:640px){.choice{grid-template-columns:1fr}.bsteps{font-size:.72rem}}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#inicio">Bruna Souza</a>
+<nav aria-label="Principal"><a href="#sobre">Sobre</a><a href="#atendimento">Atendimento</a><a href="#depoimentos">Depoimentos</a><a href="#instagram">Instagram</a><a href="#duvidas">Dúvidas</a></nav>
+<a class="btn" href="#agendar">Agendar consulta</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap">
+<div>
+<p class="name">Bruna Souza | Nutricionista</p>
+<h1>Sua saúde merece um cuidado que <em>respeita você.</em></h1>
+<p class="lead">Uma alimentação equilibrada não precisa ser complicada. Vamos construir juntas uma rotina alimentar mais saudável, leve e possível para você.</p>
+<div class="row"><a class="btn" href="#agendar">Agendar minha consulta</a><a class="btn ghost" href="#atendimento">Conhecer meu atendimento</a></div>
+</div>
+<div class="arch" role="img" aria-label="Espaço reservado para a foto profissional da Bruna">
+<span><svg class="leaf" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M32 58V28M32 40C18 40 10 30 10 14c16 0 22 8 22 26ZM32 32C32 18 40 10 54 10c0 16-8 22-22 22Z"/></svg>Espaço para a foto profissional da Bruna</span>
+</div>
+</div></section>
+
+<section class="about" id="sobre"><div class="wrap">
+<div class="photo" role="img" aria-label="Espaço reservado para foto">Foto da Bruna<br>(substituir pela imagem real)</div>
+<div>
+<h2>Prazer, sou a Bruna!</h2>
+<p class="lead">Meu objetivo é ajudar você a desenvolver uma relação mais saudável com a alimentação, respeitando sua rotina, suas necessidades e seus objetivos. Acredito que cuidar da saúde deve ser um processo individualizado, acolhedor e sustentável.</p>
+<div class="fields">
+<div><b>Formação</b>A preencher pela Bruna</div>
+<div><b>Abordagem nutricional</b>A preencher pela Bruna</div>
+<div><b>Valores</b>A preencher pela Bruna</div>
+<div><b>Experiência</b>A preencher pela Bruna</div>
+</div>
+</div>
+</div></section>
+
+<section id="atendimento"><div class="wrap">
+<h2>Duas formas de cuidar de você</h2>
+<p class="lead">Escolha a modalidade que cabe melhor na sua rotina.</p>
+<div class="grid2">
+<article class="card"><h3>Consulta nutricional online</h3>
+<ul><li>Atendimento por videochamada.</li><li>Acompanhamento personalizado conforme a abordagem profissional da nutricionista.</li><li>Flexibilidade para pacientes de diferentes localidades.</li></ul>
+<p class="tbd">Valor, duração e horários: a informar.</p>
+<a class="btn" href="#agendar" data-mode="Online">Agendar consulta online</a></article>
+<article class="card"><h3>Consulta nutricional presencial</h3>
+<ul><li>Atendimento presencial em local a ser informado.</li><li>Orientações individualizadas de acordo com as necessidades do paciente.</li></ul>
+<p class="tbd">Endereço, valor, duração e horários: a informar.</p>
+<a class="btn" href="#agendar" data-mode="Presencial">Agendar consulta presencial</a></article>
+</div>
+</div></section>
+
+<section class="book" id="agendar"><div class="wrap">
+<h2>Vamos agendar seu momento de cuidado?</h2>
+<p class="lead">Escolha a modalidade de atendimento e envie sua solicitação de agendamento de forma simples e rápida.</p>
+<div class="form" id="bk">
+<ol class="bsteps" aria-label="Etapas do agendamento"><li class="on">Atendimento</li><li>Seus dados</li><li>Revisão</li><li>Envio</li></ol>
+
+<div class="pane" data-p="0">
+<div class="choice">
+<button type="button" class="opt" data-mode="online" aria-pressed="false">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="13" height="12" rx="3"/><path d="m15.5 10.500 6-3.500v10l-6-3.500"/></svg>
+<h3>Consulta online</h3><p>Atendimento por videochamada, com praticidade para você.</p><span class="btn">Escolher online</span></button>
+<button type="button" class="opt" data-mode="presencial" aria-pressed="false">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.100-7-11.500a7 7 0 0 1 14 0C19 14.900 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+<h3>Consulta presencial</h3><p>Atendimento presencial em local a confirmar com a nutricionista.</p><span class="btn">Escolher presencial</span></button>
+</div>
+</div>
+
+<form class="pane" data-p="1" id="dados" novalidate hidden>
+<p class="chosen">Modalidade escolhida: <b id="modeLbl"></b></p>
+<div class="two">
+<label class="fld"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"><small class="err" id="e-nome" role="alert"></small></label>
+<label class="fld"><span>WhatsApp para contato</span><input type="tel" id="tel" autocomplete="tel" placeholder="(11) 90000-0000"><small class="err" id="e-tel" role="alert"></small></label>
+<label class="fld"><span>Data desejada</span><input type="date" id="date"><small class="err" id="e-date" role="alert"></small></label>
+<label class="fld"><span>Horário de preferência</span><select id="hora"><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Noite</option><option>Sem preferência</option></select><small class="err" id="e-hora" role="alert"></small></label>
+</div>
+<label class="fld"><span>Observações (opcional)</span><textarea id="obs" rows="3"></textarea></label>
+<p class="note">Data e horário são preferências, não uma reserva. A Bruna confirma a disponibilidade pelo WhatsApp. Não informe dados clínicos ou diagnósticos.</p>
+<div class="actions"><button type="button" class="btn ghost" data-go="0">Voltar</button><button type="submit" class="btn">Revisar pedido</button></div>
+</form>
+
+<div class="pane" data-p="2" hidden>
+<ul class="review" id="review"></ul>
+<p class="note">Ao enviar, o WhatsApp abre com a mensagem pronta. Este pedido ainda não é uma consulta confirmada.</p>
+<div class="actions"><button type="button" class="btn ghost" data-go="1">Voltar e editar</button><a class="btn wa" id="send" target="_blank" rel="noopener">Enviar solicitação pelo WhatsApp</a></div>
+</div>
+
+<div class="pane" data-p="3" hidden>
+<h3>Solicitação pronta no WhatsApp</h3>
+<p class="lead">Finalize o envio na conversa que abriu. Depois, aguarde a resposta da Bruna: a data e o horário só valem após a confirmação dela.</p>
+<div class="actions" style="justify-content:flex-start;margin-top:26px"><button type="button" class="btn ghost" data-go="1">Editar dados</button><button type="button" class="btn" id="again">Nova solicitação</button></div>
+</div>
+</div>
+</div></section>
+
+<section id="depoimentos"><div class="wrap">
+<h2>Histórias reais, mudanças que inspiram.</h2>
+<p class="lead">Conheça as experiências de quem escolheu cuidar melhor da saúde e da alimentação.</p>
+<span class="demo">Espaço reservado: aguardando depoimentos autorizados</span>
+<div class="grid3">
+<article class="card tcard"><div class="stars" aria-hidden="true">★★★★★</div><blockquote>Exemplo demonstrativo. O depoimento real e autorizado entra aqui.</blockquote><b>Nome ou iniciais</b></article>
+<article class="card tcard"><div class="stars" aria-hidden="true">★★★★★</div><blockquote>Exemplo demonstrativo. O depoimento real e autorizado entra aqui.</blockquote><b>Nome ou iniciais</b></article>
+<article class="card tcard"><div class="stars" aria-hidden="true">★★★★★</div><blockquote>Exemplo demonstrativo. O depoimento real e autorizado entra aqui.</blockquote><b>Nome ou iniciais</b></article>
+</div>
+<a class="btn wa" href="#" data-wa="Olá, Bruna! Vim pelo site e quero começar minha jornada. Podemos conversar?" target="_blank" rel="noopener">Quero começar minha jornada</a>
+</div></section>
+
+<section class="insta" id="instagram"><div class="wrap">
+<h2>Vamos nos conectar no Instagram?</h2>
+<p class="lead">Dicas, inspirações e conteúdos para ajudar você a cuidar melhor da sua alimentação e da sua saúde.</p>
+<div class="row"><a class="btn" href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">Seguir no Instagram</a></div>
+<div class="tiles" aria-label="Espaço reservado para publicações recentes"><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div></div>
+<p style="margin-top:16px;opacity:.85">@brunasouza.nutricionista_</p>
+</div></section>
+
+<section id="duvidas"><div class="wrap">
+<h2>Dúvidas frequentes</h2>
+<details><summary>Como funciona a consulta online?</summary><p>Resposta a ser preenchida pela Bruna. O atendimento é feito por videochamada.</p></details>
+<details><summary>Como funciona a consulta presencial?</summary><p>Resposta a ser preenchida pela Bruna, incluindo o local de atendimento.</p></details>
+<details><summary>Como posso agendar um horário?</summary><p>Use o formulário da seção de agendamento. Ele abre uma conversa no WhatsApp com sua solicitação, e a Bruna confirma o horário.</p></details>
+<details><summary>Quais informações preciso fornecer para a primeira consulta?</summary><p>Resposta a ser preenchida pela Bruna.</p></details>
+<details><summary>Como funciona o acompanhamento nutricional?</summary><p>Resposta a ser preenchida pela Bruna.</p></details>
+<details><summary>Como faço para remarcar uma consulta?</summary><p>Resposta a ser preenchida pela Bruna. Enquanto isso, fale com ela pelo WhatsApp.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+<h2>Seu próximo passo para cuidar de você começa aqui.</h2>
+<p class="lead">Vamos conversar sobre seus objetivos e encontrar a melhor forma de começar?</p>
+<div class="row">
+<a class="btn wa" href="#" data-wa="Olá, Bruna! Vim pelo site e gostaria de conversar sobre atendimento nutricional." target="_blank" rel="noopener">Falar no WhatsApp</a>
+<a class="btn ghost" href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">Instagram</a>
+<a class="btn" href="#agendar" data-mode="Online">Agendar online</a>
+<a class="btn" href="#agendar" data-mode="Presencial">Agendar presencial</a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><a class="brand" href="#inicio">Bruna Souza | Nutricionista</a><p>CRN: <em>a informar</em></p></div>
+<div><a href="#sobre">Sobre</a><a href="#atendimento">Atendimento</a><a href="#agendar">Agendamento</a><a href="#depoimentos">Depoimentos</a><a href="#duvidas">Dúvidas</a></div>
+<div><a href="#" data-wa="Olá, Bruna!" target="_blank" rel="noopener">WhatsApp +55 11 97518-2341</a><a href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">@brunasouza.nutricionista_</a><button id="priv">Política de privacidade</button></div>
+<p class="small">Os dados informados nos formulários são tratados com cuidado e usados apenas para organizar seu atendimento.</p>
+</div></footer>
+
+<a class="fab" id="fab" href="#" data-wa="Olá, Bruna! Vim pelo site e gostaria de mais informações." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.500Z"/></svg></a>
+
+<dialog id="dlg"><h3>Política de privacidade</h3>
+<p style="margin:14px 0;color:var(--muted)">Este site não armazena os dados digitados no formulário. Nome, WhatsApp, e-mail e motivo são usados somente para montar a mensagem que você decide enviar à Bruna pelo WhatsApp. Depois do envio, o tratamento passa a seguir as regras do WhatsApp e do atendimento profissional. Texto completo a ser revisado e informado pela nutricionista.</p>
+<button class="btn" onclick="this.closest('dialog').close()">Entendi</button></dialog>
+
+<script>
+(function(){
+var NUM="5511975182341";
+function wa(t){return"https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(a.dataset.wa)});
+document.getElementById("priv").onclick=function(){document.getElementById("dlg").showModal()};
+
+/* animações de entrada */
+try{
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserver" in window){
+var sel="section:not(.hero) h2,section:not(.hero) .lead,.demo,.card,details,.tiles div,.fields div,.photo,.form,.final .row,.insta .row,section:not(.hero)>.wrap>.btn,footer .wrap>*";
+var seen=new Map();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+document.querySelectorAll(sel).forEach(function(el){
+var n=seen.get(el.parentNode)||0;seen.set(el.parentNode,n+1);
+el.style.setProperty("--d",(n%5)*0.1+"s");el.classList.add("rv");
+el.addEventListener("transitionend",function h(ev){if(ev.propertyName==="opacity"&&el.classList.contains("in")){el.classList.remove("rv","in");el.style.removeProperty("--d");el.removeEventListener("transitionend",h)}});
+io.observe(el)})}
+}catch(x){document.querySelectorAll(".rv").forEach(function(el){el.classList.remove("rv")})}
+
+/* agendamento */
+var bk=document.getElementById("bk"),panes=bk.querySelectorAll(".pane"),bars=bk.querySelectorAll(".bsteps li");
+var opts=bk.querySelectorAll(".opt"),mode="",step=0,send=document.getElementById("send");
+var d=document.getElementById("date"),t=new Date();t.setMinutes(t.getMinutes()-t.getTimezoneOffset());d.min=t.toISOString().slice(0,10);
+function v(id){return document.getElementById(id).value.trim()}
+function fmt(x){var p=x.split("-");return p[2]+"/"+p[1]+"/"+p[0]}
+function go(n){step=n;panes.forEach(function(p,i){p.hidden=i!==n});bars.forEach(function(b,i){b.classList.toggle("on",i<=n)});
+if(n===2)build();if(n>0)bk.scrollIntoView({block:"start"})}
+function choose(m,adv){mode=m;opts.forEach(function(o){var on=o.dataset.mode===m;o.classList.toggle("sel",on);o.setAttribute("aria-pressed",on)});
+document.getElementById("modeLbl").textContent=m==="online"?"Consulta online":"Consulta presencial";if(adv)go(1)}
+opts.forEach(function(o){o.addEventListener("click",function(){choose(o.dataset.mode,true)})});
+document.querySelectorAll("a[data-mode]").forEach(function(a){a.addEventListener("click",function(){choose(a.dataset.mode.toLowerCase(),true)})});
+bk.querySelectorAll("[data-go]").forEach(function(b){b.addEventListener("click",function(){go(+b.dataset.go)})});
+function err(id,msg){var e=document.getElementById("e-"+id),i=document.getElementById(id);e.textContent=msg;i.setAttribute("aria-invalid",msg?"true":"false");return !msg}
+["nome","tel","date","hora"].forEach(function(id){document.getElementById(id).addEventListener("input",function(){err(id,"")})});
+function validate(){
+var r=[];
+r.push(err("nome",(v("nome").length<5||v("nome").split(/\s+/).length<2)?"Informe seu nome completo.":""));
+r.push(err("tel",v("tel").replace(/\D/g,"").length<10?"Informe um WhatsApp com DDD, por exemplo (11) 90000-0000.":""));
+r.push(err("date",!d.value?"Escolha a data desejada.":(d.value<d.min?"Escolha uma data a partir de hoje.":"")));
+r.push(err("hora",!v("hora")?"Escolha um horário de preferência.":""));
+var bad=["nome","tel","date","hora"].filter(function(_,i){return !r[i]})[0];
+if(bad)document.getElementById(bad).focus();return !bad}
+function msg(){
+var m="Olá, Bruna! Gostaria de solicitar um agendamento de consulta nutricional.\n\nNome: "+v("nome")+"\nModalidade: "+mode+"\nData desejada: "+fmt(d.value)+"\nHorário de preferência: "+v("hora")+"\nWhatsApp para contato: "+v("tel");
+if(v("obs"))m+="\nObservações: "+v("obs");
+return m+"\n\nSe possível, gostaria de confirmar a disponibilidade desse horário. Obrigado(a)!"}
+function build(){
+var r=[["Modalidade",mode==="online"?"Consulta online":"Consulta presencial"],["Data desejada",fmt(d.value)],["Horário de preferência",v("hora")],["Nome",v("nome")],["WhatsApp",v("tel")]];
+if(v("obs"))r.push(["Observações",v("obs")]);
+var ul=document.getElementById("review");ul.textContent="";
+r.forEach(function(x){var li=document.createElement("li"),b=document.createElement("b");b.textContent=x[0];li.appendChild(b);li.appendChild(document.createTextNode(x[1]));ul.appendChild(li)});
+send.href=wa(msg())}
+document.getElementById("dados").addEventListener("submit",function(e){e.preventDefault();if(validate())go(2)});
+send.addEventListener("click",function(){setTimeout(function(){go(3)},500)});
+document.getElementById("again").addEventListener("click",function(){document.getElementById("dados").reset();mode="";opts.forEach(function(o){o.classList.remove("sel");o.setAttribute("aria-pressed","false")});go(0)});
+})();
+</script>
+</body>
+</html>
