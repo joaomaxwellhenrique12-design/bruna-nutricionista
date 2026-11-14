@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bruna Souza | Nutricionista – consultas online e presenciais</title>
+<meta name="description" content="Bruna Souza, nutricionista. Consulta nutricional online e presencial, com acompanhamento individualizado. Solicite seu horário pelo WhatsApp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fff;--surface:#fff;--sage:#EDE5DA;--beige:#EDE5DA;--gold:#B79B70;--olive:#8B735E;--olive-d:#292929;--sand:#FAF9F6;--brown:#8B735E;--ink:#292929;--muted:#6b625a;--line:#EDE5DA;--wa:#292929;--wa-t:#fff;--btn-t:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Manrope,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,7vw,4.9rem)}h2{font-size:clamp(2rem,4.5vw,3.1rem)}h3{font-size:1.6rem}
+h2::after{content:"";display:block;width:44px;height:2px;background:var(--gold);margin-top:20px}
+.final h2::after{margin-inline:auto}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--brown);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:92px 0}
+.lead{color:var(--muted);max-width:56ch;margin-top:16px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;text-decoration:none}
+.nav nav{display:flex;gap:26px;font-size:.95rem}
+.nav nav a{text-decoration:none;color:var(--muted)}.nav nav a:hover{color:var(--ink)}
+@media(max-width:820px){.nav nav{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;padding:14px 26px;border-radius:999px;font:700 .98rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--brown);border-color:var(--brown)}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--beige)}
+.btn.ghost:hover{background:var(--sand);color:var(--ink);border-color:var(--brown)}
+.btn.wa{background:var(--brown);border-color:var(--brown);color:#fff}
+.btn.wa:hover{background:var(--ink);border-color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.row{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+/* hero */
+.hero{padding:56px 0 96px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .8fr;gap:72px;align-items:center}
+.hero .name{font-weight:700;color:var(--brown);margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--olive)}
+.hero p.lead{font-size:1.15rem}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 28px 28px;background:linear-gradient(165deg,#fff,var(--beige));display:grid;place-items:center;text-align:center;padding:30px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(41,41,41,.3)}
+.arch::before{content:"";position:absolute;inset:14px;border:1px solid var(--gold);border-radius:999px 999px 18px 18px}
+.arch span{position:relative;font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:var(--olive-d);max-width:15ch}
+.arch svg{display:block;margin:0 auto 12px}
+.leaf{animation:sway 6s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes sway{50%{transform:rotate(4deg)}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:340px;margin:0 auto}section{padding:68px 0}}
+/* about */
+.about{background:var(--sand)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.photo{aspect-ratio:1;border-radius:28px;background:var(--beige);display:grid;place-items:center;color:var(--brown);font-family:"Cormorant Garamond",serif;font-size:1.2rem;text-align:center;padding:20px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.fields div{background:var(--surface);border:1.5px dashed var(--sage);border-radius:16px;padding:14px 16px;font-size:.9rem;color:var(--muted)}
+.fields b{display:block;color:var(--ink);font-size:.95rem}
+@media(max-width:820px){.about .wrap{grid-template-columns:1fr}.fields{grid-template-columns:1fr}}
+/* cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:34px;box-shadow:0 12px 30px -24px rgba(41,41,41,.18)}
+.card ul{padding-left:20px;color:var(--muted);margin:18px 0 22px}
+.tbd{font-size:.88rem;color:var(--brown);border-top:1px dashed var(--line);padding-top:14px;margin-bottom:22px}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+/* booking */
+.book{background:linear-gradient(180deg,var(--bg),var(--sand))}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:38px;margin-top:40px;max-width:820px;box-shadow:0 20px 50px -34px rgba(41,41,41,.18)}
+.steps{display:flex;gap:8px;margin-bottom:28px;font-size:.88rem;color:var(--muted)}
+.steps div{flex:1;border-top:4px solid var(--line);padding-top:8px}.steps .on{border-color:var(--olive);color:var(--ink);font-weight:700}
+fieldset{border:0;padding:0;margin:0 0 22px}legend{font-weight:700;margin-bottom:10px;padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{border:1.5px solid var(--line);border-radius:999px;padding:11px 20px;cursor:pointer;transition:.2s;background:var(--bg)}
+.opts input:checked+label{background:var(--olive);color:var(--btn-t);border-color:var(--olive)}
+.opts input:focus-visible+label{outline:3px solid var(--brown);outline-offset:2px}
+.fld{display:block;margin-bottom:16px}.fld span{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input[type=text],input[type=tel],input[type=email],input[type=date],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:13px 15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.two{grid-template-columns:1fr}.form{padding:24px}}
+.err{color:#b3402e;font-size:.88rem;min-height:1.2em;margin-top:4px}
+.note{font-size:.9rem;color:var(--muted);background:var(--sand);border:1px solid var(--beige);border-radius:14px;padding:14px 16px;margin:18px 0}
+.pane[hidden]{display:none}
+.review{margin:0 0 20px;padding:0;list-style:none}.review li{padding:11px 0;border-bottom:1px solid var(--line)}.review b{display:inline-block;min-width:130px}
+.actions{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+/* testimonials */
+.demo{display:inline-block;background:var(--sand);color:var(--brown);border-radius:999px;padding:5px 14px;font-size:.85rem;font-weight:700;margin-top:18px}
+.tcard{border-style:dashed;border-color:var(--sage)}
+.tcard .stars{color:var(--brown);letter-spacing:3px}
+.tcard blockquote{margin:12px 0;color:var(--muted);font-style:italic}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:40px 0 36px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr}}
+/* instagram */
+.insta{background:var(--sand);color:var(--ink)}
+.insta .lead{color:inherit;opacity:.9}
+.insta .btn:hover{color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
+.tiles div{aspect-ratio:1;border-radius:18px;background:var(--beige);color:var(--brown);display:grid;place-items:center;font-size:.85rem;text-align:center;padding:10px;opacity:.9}
+@media(min-width:821px){.tiles{grid-template-columns:repeat(6,1fr)}}
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:0 24px;margin-top:12px;max-width:820px}
+summary{cursor:pointer;font-weight:700;padding:20px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--brown);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);padding-bottom:20px}
+/* final */
+.final{text-align:center;background:var(--sand)}.final .lead{margin-inline:auto}.final .row{justify-content:center}
+footer{background:var(--olive-d);color:#eee9dc;padding:56px 0 100px;font-size:.93rem}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
+footer a{display:block;text-decoration:none;opacity:.85;margin-bottom:6px}footer a:hover{opacity:1}
+footer .brand{display:block;margin-bottom:10px;opacity:1}
+footer button{background:none;border:0;color:inherit;font:inherit;padding:0;text-decoration:underline;cursor:pointer;opacity:.85}
+.small{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.2);padding-top:20px;opacity:.8;font-size:.85rem}
+@media(max-width:820px){footer .wrap{grid-template-columns:1fr}}
+.fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:transform .2s}
+.fab:hover{transform:scale(1.07)}
+dialog{border:0;border-radius:24px;max-width:540px;width:calc(100% - 40px);padding:32px;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(41,41,41,.5)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* animações e agendamento v2 */
+.js .rv{opacity:0;translate:0 20px;transition:opacity .9s cubic-bezier(.2,.7,.2,1),translate .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;translate:0 0;transition-delay:var(--d,0s)}
+.js .hero .wrap>div:first-child>*,.js .arch{animation:heroIn 1s cubic-bezier(.2,.7,.2,1) both}
+.js .hero .wrap>div:first-child>:nth-child(1){animation-delay:.1s}
+.js .hero .wrap>div:first-child>:nth-child(2){animation-delay:.25s}
+.js .hero .wrap>div:first-child>:nth-child(3){animation-delay:.42s}
+.js .hero .wrap>div:first-child>:nth-child(4){animation-delay:.58s}
+.js .arch{animation-delay:.35s}
+@keyframes heroIn{from{opacity:0;translate:0 22px}}
+@keyframes paneIn{from{opacity:0;translate:0 12px}}
+.pane:not([hidden]){animation:paneIn .45s ease both}
+.btn{transition:transform .25s,background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn:hover{box-shadow:0 12px 24px -14px rgba(41,41,41,.5)}
+.card,details{transition:transform .35s ease,box-shadow .35s ease,border-color .3s}
+.nav nav a,footer a{transition:color .25s,opacity .25s}
+.arch span,.photo{transition:transform 1s ease}
+@media(hover:hover){
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 40px -26px rgba(41,41,41,.3);border-color:var(--gold)}
+details:hover{border-color:var(--gold)}
+.arch:hover span{transform:scale(1.06)}
+.photo:hover{transform:scale(1.025)}}
+.form{scroll-margin-top:90px}
+.bsteps{display:flex;gap:8px;list-style:none;padding:0;margin:0 0 28px;font-size:.85rem;color:var(--muted)}
+.bsteps li{flex:1;border-top:4px solid var(--line);padding-top:8px;transition:border-color .4s,color .4s}
+.bsteps li.on{border-color:var(--brown);color:var(--ink);font-weight:700}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.opt{font:inherit;color:inherit;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:24px;padding:30px;cursor:pointer;display:flex;flex-direction:column;gap:10px;align-items:flex-start;transition:border-color .3s,background .3s,transform .3s,box-shadow .3s}
+.opt svg{color:var(--brown)}.opt p{color:var(--muted);margin-bottom:8px}
+.opt:hover{border-color:var(--brown);transform:translateY(-3px)}
+.opt.sel{border-color:var(--brown);background:var(--sand);box-shadow:inset 0 0 0 1px var(--brown)}
+.opt.sel .btn{background:var(--brown);border-color:var(--brown)}
+.chosen{margin-bottom:20px;color:var(--muted)}.chosen b{color:var(--ink)}
+select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:13px 15px}
+input:focus,select:focus,textarea:focus{border-color:var(--brown);outline:none}
+input[aria-invalid=true],select[aria-invalid=true]{border-color:#b3402e}
+.err{display:block}
+@media(max-width:640px){.choice{grid-template-columns:1fr}.bsteps{font-size:.72rem}}
+
+/* logo e depoimentos */
+.brand{display:flex;align-items:center;line-height:0}
+.brand img{display:block;height:60px;width:auto;aspect-ratio:1/1}
+@media(max-width:640px){.nav .wrap{height:70px}.brand img{height:50px}.nav .btn{padding:12px 18px;font-size:.9rem}}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:44px 0 40px;align-items:start}
+.tcard{border-style:solid;border-color:var(--line);padding:38px 40px}
+.tcard.long{grid-column:1/-1}
+.thead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:22px}
+.thead h3{display:flex;align-items:center;gap:12px;font-size:1.8rem}
+.hi{color:var(--brown);flex:none}.qi{color:var(--gold);flex:none}
+.tbody p{margin:0 0 1.1em;font-size:1.06rem;line-height:1.8;color:var(--ink)}
+.tbody p:last-child{margin-bottom:0}
+.tcard.long .tbody{columns:2;column-gap:56px}
+@media(max-width:900px){.tgrid{grid-template-columns:1fr}.tcard.long .tbody{columns:1}.tcard{padding:28px 24px}.thead h3{font-size:1.55rem}}
+
+/* calendário e faq */
+.cal{max-width:420px;margin:0 auto}
+.calh{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.calh strong{font:600 1.6rem "Cormorant Garamond",serif}
+.cnav{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--beige);background:#fff;cursor:pointer;font-size:1.4rem;line-height:1;color:var(--ink);transition:border-color .25s,background .25s}
+.cnav:hover:not(:disabled){border-color:var(--brown);background:var(--sand)}.cnav:disabled{opacity:.35;cursor:not-allowed}
+.wk,.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}
+.wk span{font-size:.8rem;color:var(--muted);padding:6px 0}
+.cg button{aspect-ratio:1;border:1.5px solid transparent;border-radius:50%;background:none;font:inherit;color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.cg button:hover:not(:disabled){border-color:var(--brown)}
+.cg button:disabled{color:#c9c0b4;cursor:not-allowed}
+.cg button.today:not(.sel){border-color:var(--gold)}
+.cg button.sel,.chip.sel{background:var(--brown);border-color:var(--brown);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.chip{font:inherit;border:1.5px solid var(--beige);background:#fff;color:var(--ink);border-radius:999px;padding:11px 20px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.chip:hover{border-color:var(--brown)}
+.done{text-align:center}.done .tick{color:var(--brown);margin-bottom:8px}
+.ref{display:inline-block;background:var(--sand);border:1px solid var(--beige);border-radius:12px;padding:8px 18px;font-weight:700;letter-spacing:.05em;margin-top:18px}
+.q{display:flex;align-items:center;gap:14px}.q svg{color:var(--brown);flex:none}
+details[open]>p{animation:paneIn .4s ease both}
+details[open]{border-color:var(--gold)}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#inicio" aria-label="Bruna Souza Nutricionista, ir para o início"><img src="data:image/webp;base64,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" alt="Logo oficial de Bruna Souza, Nutricionista" width="400" height="400"></a>
+<nav aria-label="Principal"><a href="#sobre">Sobre</a><a href="#atendimento">Atendimento</a><a href="#depoimentos">Depoimentos</a><a href="#instagram">Instagram</a><a href="#duvidas">Dúvidas</a></nav>
+<a class="btn" href="#agendar">Agendar consulta</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap">
+<div>
+<p class="name">Bruna Souza | Nutricionista</p>
+<h1>Sua saúde merece um cuidado que <em>respeita você.</em></h1>
+<p class="lead">Uma alimentação equilibrada não precisa ser complicada. Vamos construir juntas uma rotina alimentar mais saudável, leve e possível para você.</p>
+<div class="row"><a class="btn" href="#agendar">Agendar minha consulta</a><a class="btn ghost" href="#atendimento">Conhecer meu atendimento</a></div>
+</div>
+<div class="arch" role="img" aria-label="Espaço reservado para a foto profissional da Bruna">
+<span><svg class="leaf" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M32 58V28M32 40C18 40 10 30 10 14c16 0 22 8 22 26ZM32 32C32 18 40 10 54 10c0 16-8 22-22 22Z"/></svg>Espaço para a foto profissional da Bruna</span>
+</div>
+</div></section>
+
+<section class="about" id="sobre"><div class="wrap">
+<div class="photo" role="img" aria-label="Espaço reservado para foto">Foto da Bruna<br>(substituir pela imagem real)</div>
+<div>
+<h2>Prazer, sou a Bruna!</h2>
+<p class="lead">Meu objetivo é ajudar você a desenvolver uma relação mais saudável com a alimentação, respeitando sua rotina, suas necessidades e seus objetivos. Acredito que cuidar da saúde deve ser um processo individualizado, acolhedor e sustentável.</p>
+<div class="fields">
+<div><b>Formação</b>A preencher pela Bruna</div>
+<div><b>Abordagem nutricional</b>A preencher pela Bruna</div>
+<div><b>Valores</b>A preencher pela Bruna</div>
+<div><b>Experiência</b>A preencher pela Bruna</div>
+</div>
+</div>
+</div></section>
+
+<section id="atendimento"><div class="wrap">
+<h2>Duas formas de cuidar de você</h2>
+<p class="lead">Escolha a modalidade que cabe melhor na sua rotina.</p>
+<div class="grid2">
+<article class="card"><h3>Consulta nutricional online</h3>
+<ul><li>Atendimento por videochamada.</li><li>Acompanhamento personalizado conforme a abordagem profissional da nutricionista.</li><li>Flexibilidade para pacientes de diferentes localidades.</li></ul>
+<p class="tbd">Valor, duração e horários: a informar.</p>
+<a class="btn" href="#agendar" data-mode="Online">Agendar consulta online</a></article>
+<article class="card"><h3>Consulta nutricional presencial</h3>
+<ul><li>Atendimento presencial em local a ser informado.</li><li>Orientações individualizadas de acordo com as necessidades do paciente.</li></ul>
+<p class="tbd">Endereço, valor, duração e horários: a informar.</p>
+<a class="btn" href="#agendar" data-mode="Presencial">Agendar consulta presencial</a></article>
+</div>
+</div></section>
+
+<section class="book" id="agendar"><div class="wrap">
+<h2>Vamos agendar seu momento de cuidado?</h2>
+<p class="lead">Escolha a modalidade de atendimento e envie sua solicitação de agendamento de forma simples e rápida.</p>
+<div class="form" id="bk">
+<ol class="bsteps" aria-label="Etapas do agendamento"><li class="on">Atendimento</li><li>Seus dados</li><li>Data e horário</li><li>Revisão</li><li>WhatsApp</li></ol>
+
+<div class="pane" data-p="0">
+<div class="choice">
+<button type="button" class="opt" data-mode="presencial" aria-pressed="false"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.100-7-11.500a7 7 0 0 1 14 0C19 14.900 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg><h3>Consulta nutricional presencial</h3><p>Atendimento presencial em local a confirmar com a nutricionista.</p><span class="btn">Selecionar</span></button>
+<button type="button" class="opt" data-mode="online" aria-pressed="false"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="13" height="12" rx="3"/><path d="m15.500 10.500 6-3.500v10l-6-3.500"/></svg><h3>Consulta nutricional online</h3><p>Atendimento por videochamada, com praticidade para você.</p><span class="btn">Selecionar</span></button>
+</div>
+</div>
+
+<form class="pane" data-p="1" id="dados" novalidate hidden>
+<p class="chosen">Atendimento escolhido: <b id="modeLbl"></b></p>
+<div class="two">
+<label class="fld"><span>Nome completo</span><input type="text" id="nome" autocomplete="name"><small class="err" id="e-nome" role="alert"></small></label>
+<label class="fld"><span>WhatsApp</span><input type="tel" id="tel" autocomplete="tel" placeholder="(11) 90000-0000"><small class="err" id="e-tel" role="alert"></small></label>
+</div>
+<label class="fld"><span>E-mail</span><input type="email" id="mail" autocomplete="email"><small class="err" id="e-mail" role="alert"></small></label>
+<label class="fld"><span>Objetivo principal da consulta (opcional)</span><input type="text" id="obj"></label>
+<label class="fld"><span>Observações adicionais (opcional)</span><textarea id="obs" rows="3"></textarea></label>
+<p class="note">Não informe diagnósticos nem dados de saúde sensíveis aqui. Esses assuntos ficam para a consulta.</p>
+<div class="actions"><button type="button" class="btn ghost" data-go="0">Voltar</button><button type="submit" class="btn">Continuar</button></div>
+</form>
+
+<div class="pane" data-p="2" hidden>
+<div class="cal">
+<div class="calh"><button type="button" class="cnav" id="prev" aria-label="Mês anterior">‹</button><strong id="mtitle"></strong><button type="button" class="cnav" id="nextm" aria-label="Próximo mês">›</button></div>
+<div class="wk" aria-hidden="true"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+<div class="cg" id="cg"></div>
+</div>
+<p class="chosen" id="slotHint" style="margin-top:22px"></p>
+<div class="chips" id="chips"></div>
+<small class="err" id="e-slot" role="alert"></small>
+<p class="note">Ainda não há uma agenda conectada, então a data e o horário são preferências. A Bruna confirma a disponibilidade pelo WhatsApp.</p>
+<div class="actions"><button type="button" class="btn ghost" data-go="1">Voltar</button><button type="button" class="btn" id="toReview">Revisar pedido</button></div>
+</div>
+
+<div class="pane" data-p="3" hidden>
+<ul class="review" id="review"></ul>
+<p class="note">Este pedido ainda não é uma consulta confirmada. A confirmação depende da resposta da Bruna.</p>
+<div class="actions"><button type="button" class="btn ghost" data-go="2">Voltar e editar</button><button type="button" class="btn" id="confirm">Confirmar solicitação</button></div>
+</div>
+
+<div class="pane done" data-p="4" hidden>
+<div class="tick"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.500 2.700 2.700L16 9.500"/></svg></div>
+<h3>Solicitação preparada</h3>
+<p class="lead" style="margin-inline:auto">Falta um passo: envie a mensagem pelo WhatsApp. Só depois da resposta da Bruna a consulta fica confirmada.</p>
+<p class="ref" id="ref"></p>
+<div class="actions" style="justify-content:center;margin-top:20px"><a class="btn wa" id="send" target="_blank" rel="noopener">Continuar pelo WhatsApp</a><button type="button" class="btn ghost" id="again">Nova solicitação</button></div>
+</div>
+</div>
+</div></section>
+
+<section id="depoimentos"><div class="wrap">
+<h2>Histórias reais, transformações que vão além da alimentação.</h2>
+<p class="lead">Cada paciente tem uma história única. É uma alegria fazer parte de jornadas construídas com cuidado, acolhimento e dedicação.</p>
+<!-- COMO ADICIONAR UM NOVO DEPOIMENTO: copie um bloco <article class="card tcard"> ... </article> abaixo, cole dentro de <div class="tgrid"> e troque o título (h3) e os parágrafos (<p>). Use a classe "card tcard long" para um relato extenso (ocupa a largura toda). Só publique relatos com autorização do paciente. -->
+<div class="tgrid">
+<article class="card tcard long">
+<div class="thead"><h3><svg class="hi" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.9-8-11A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 6.1-8 11-8 11Z"/></svg>Muito além da alimentação</h3><svg class="qi" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5.5A1.5 1.5 0 0 0 4 8.5V12a1.500 1.500 0 0 0 1.500 1.500H8V15a2 2 0 0 1-2 2M20 7h-3.500A1.500 1.500 0 0 0 15 8.500V12a1.500 1.500 0 0 0 1.500 1.500H19V15a2 2 0 0 1-2 2"/></svg></div>
+<div class="tbody">
+<p><strong>Minha história com a nutri Bruna: muito além da alimentação! ❤️</strong></p>
+<p>Minha caminhada com essa profissional foi muito além de um acompanhamento nutricional. Foi um processo de transformação que mudou não apenas meu corpo, mas principalmente a maneira como eu me enxergava e me relacionava com a alimentação.</p>
+<p>Quando começamos, eu tinha muitas dificuldades. Sentia medo de comer, medo de determinados alimentos e até medo da balança. A alimentação, que deveria ser algo natural e prazeroso, muitas vezes era acompanhada de preocupações, inseguranças e sentimentos que eu não conseguia administrar tão bem.</p>
+<p>E foi aí que o trabalho dela fez toda a diferença.</p>
+<p>Com muito carinho, paciência, dedicação e estratégias adequadas à minha realidade, ela foi me ajudando a desconstruir esses medos. Nunca foi simplesmente sobre entregar uma dieta, mas sobre entender minhas dificuldades, respeitar meu tempo e encontrar caminhos que realmente funcionassem para mim.</p>
+<p>Ela também me ensinou a olhar para a balança de outra maneira, a não permitir que um número definisse meus resultados ou determinasse como eu deveria me sentir em relação ao meu corpo.</p>
+<p>E hoje posso dizer que minha relação com a alimentação é outra. Tenho muito mais tranquilidade, consciência e liberdade. O medo da comida e da balança já não ocupa o espaço que ocupava antes.</p>
+<p>E existe algo que considero muito importante nessa nossa caminhada: nossos resultados não foram construídos em torno da perda de peso. Pelo contrário, tivemos grandes conquistas com o ganho de massa magra, a evolução da composição corporal e a construção de um corpo mais forte e saudável.</p>
+<p>Através da dedicação dela, do cuidado em cada detalhe e da confiança que construímos ao longo do processo, hoje sou outra pessoa.</p>
+<p>Sou muito grata por ter encontrado uma profissional que enxergou além dos números, que teve paciência com minhas dificuldades e que entendeu que cada pessoa precisa de um cuidado individualizado.</p>
+<p>Às vezes, procuramos um profissional esperando transformar o nosso corpo, mas encontramos alguém que também nos ajuda a transformar nossa mente, nossos hábitos e nossa maneira de viver.</p>
+<p>E foi exatamente isso que aconteceu comigo.</p>
+<p>Obrigada por tanto carinho, profissionalismo e dedicação. Você faz parte de uma das transformações mais importantes da minha vida! ❤️</p>
+</div>
+</article>
+<article class="card tcard">
+<div class="thead"><h3><svg class="hi" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.9-8-11A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 6.1-8 11-8 11Z"/></svg>Acolhimento e atenção</h3><svg class="qi" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5.5A1.5 1.5 0 0 0 4 8.5V12a1.500 1.500 0 0 0 1.500 1.500H8V15a2 2 0 0 1-2 2M20 7h-3.500A1.500 1.500 0 0 0 15 8.500V12a1.500 1.500 0 0 0 1.500 1.500H19V15a2 2 0 0 1-2 2"/></svg></div>
+<div class="tbody">
+<p>Doutora muito obrigada pelo carinho pela atenção eu quero dizer que o seu atendimento né com a minha pessoa foi muito essencial foi um desabafo e eu quero dizer que eu tô assim bem melhor sabe psicologicamente foi muito essencial essa consulta eu tô muito feliz olha que eu nem comecei o tratamento ainda mas eu tô muito feliz e eu agradeço a Deus por você ser uma pessoa tão especial tão maravilhosa com seus paciente só gratidão viu</p>
+</div>
+</article>
+<article class="card tcard">
+<div class="thead"><h3><svg class="hi" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.9-8-11A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 6.1-8 11-8 11Z"/></svg>Dedicação e transformação</h3><svg class="qi" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5.5A1.5 1.5 0 0 0 4 8.5V12a1.500 1.500 0 0 0 1.500 1.500H8V15a2 2 0 0 1-2 2M20 7h-3.500A1.500 1.500 0 0 0 15 8.500V12a1.500 1.500 0 0 0 1.500 1.500H19V15a2 2 0 0 1-2 2"/></svg></div>
+<div class="tbody">
+<p>Bruna, você foi muito importante nesse meu processo de reeducação alimentar e perda de 5 kg.. principalmente nesse processo tão desafiador que estou, perimenopausa e dificuldades para perder peso. O seu acompanhante foi imprescindível para que eu atingisse meu objetivo. Sou grata pelo seu profissionalismo, dedicação e comprometimento com o que eu desejava no momento. Muito obrigada, DEUS continue abençoando seu trabalho sua profissão e sua vida..</p>
+</div>
+</article>
+</div>
+<a class="btn wa" href="#" data-wa="Olá, Bruna! Vim pelo site e quero começar minha jornada. Podemos conversar?" target="_blank" rel="noopener">Quero começar minha jornada</a>
+</div></section>
+
+<section class="insta" id="instagram"><div class="wrap">
+<h2>Vamos nos conectar no Instagram?</h2>
+<p class="lead">Dicas, inspirações e conteúdos para ajudar você a cuidar melhor da sua alimentação e da sua saúde.</p>
+<div class="row"><a class="btn" href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">Seguir no Instagram</a></div>
+<div class="tiles" aria-label="Espaço reservado para publicações recentes"><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div><div>Publicação em breve</div></div>
+<p style="margin-top:16px;opacity:.85">@brunasouza.nutricionista_</p>
+</div></section>
+
+<section id="duvidas" class="faq"><div class="wrap">
+<h2>Ficou com alguma dúvida?</h2>
+<p class="lead">Preparamos algumas respostas para ajudar você a conhecer melhor nossos atendimentos.</p>
+<!-- PARA EDITAR UMA RESPOSTA: altere o texto dentro do <p> da pergunta desejada. Para adicionar outra pergunta, copie um bloco <details> inteiro. -->
+<div style="margin-top:28px">
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Como funciona a primeira consulta?</span></summary><p>Na primeira consulta, a nutricionista busca conhecer sua rotina, seus hábitos alimentares, suas dificuldades e seus objetivos para construir uma estratégia de acompanhamento individualizada.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>A consulta pode ser realizada online?</span></summary><p>Sim, disponibilizamos atendimento online, conforme a disponibilidade da nutricionista. Entre em contato para conhecer os detalhes.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Também existe atendimento presencial?</span></summary><p>Sim, existe atendimento presencial. Entre em contato para consultar a disponibilidade e as informações sobre o local.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Preciso seguir uma dieta muito restritiva?</span></summary><p>Não necessariamente. O acompanhamento busca construir uma alimentação equilibrada, individualizada e compatível com sua rotina, respeitando suas necessidades e preferências.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>O acompanhamento é personalizado?</span></summary><p>Sim. As orientações são elaboradas considerando as necessidades, os objetivos, a rotina e as particularidades de cada paciente.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Como faço para agendar minha consulta?</span></summary><p>Você pode utilizar o sistema de agendamento disponível no site ou entrar em contato diretamente pelo WhatsApp.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Posso remarcar minha consulta?</span></summary><p>Sim. Entre em contato com a Bruna para solicitar o reagendamento, observando as condições informadas no momento da contratação.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Como funciona o acompanhamento nutricional?</span></summary><p>O acompanhamento envolve avaliação, orientações individualizadas e reavaliações conforme a necessidade de cada paciente.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Como posso entrar em contato com a Bruna?</span></summary><p>Você pode utilizar o botão do WhatsApp disponível no site ou acessar o Instagram profissional.</p></details>
+<details><summary><span class="q"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.500"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></svg>Como funciona o pagamento?</span></summary><p>Entre em contato para consultar os valores, as formas de pagamento e as condições disponíveis.</p></details>
+</div>
+</div></section>
+
+<section class="final"><div class="wrap">
+<h2>Seu próximo passo para cuidar de você começa aqui.</h2>
+<p class="lead">Vamos conversar sobre seus objetivos e encontrar a melhor forma de começar?</p>
+<div class="row">
+<a class="btn wa" href="#" data-wa="Olá, Bruna! Vim pelo site e gostaria de conversar sobre atendimento nutricional." target="_blank" rel="noopener">Falar no WhatsApp</a>
+<a class="btn ghost" href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">Instagram</a>
+<a class="btn" href="#agendar" data-mode="Online">Agendar online</a>
+<a class="btn" href="#agendar" data-mode="Presencial">Agendar presencial</a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><a class="brand" href="#inicio">Bruna Souza | Nutricionista</a><p>CRN9 36033</p></div>
+<div><a href="#sobre">Sobre</a><a href="#atendimento">Atendimento</a><a href="#agendar">Agendamento</a><a href="#depoimentos">Depoimentos</a><a href="#duvidas">Dúvidas</a></div>
+<div><a href="#" data-wa="Olá, Bruna!" target="_blank" rel="noopener">WhatsApp +55 11 97518-2341</a><a href="https://www.instagram.com/brunasouza.nutricionista_/" target="_blank" rel="noopener">@brunasouza.nutricionista_</a><button id="priv">Política de privacidade</button></div>
+<p class="small">Os dados informados nos formulários são tratados com cuidado e usados apenas para organizar seu atendimento.</p>
+</div></footer>
+
+<a class="fab" id="fab" href="#" data-wa="Olá, Bruna! Vim pelo site e gostaria de mais informações." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.500Z"/></svg></a>
+
+<dialog id="dlg"><h3>Política de privacidade</h3>
+<p style="margin:14px 0;color:var(--muted)">Este site não armazena os dados digitados no formulário. Nome, WhatsApp, e-mail e motivo são usados somente para montar a mensagem que você decide enviar à Bruna pelo WhatsApp. Depois do envio, o tratamento passa a seguir as regras do WhatsApp e do atendimento profissional. Texto completo a ser revisado e informado pela nutricionista.</p>
+<button class="btn" onclick="this.closest('dialog').close()">Entendi</button></dialog>
+
+<script>
+(function(){
+var NUM="5511975182341";
+function wa(t){return"https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(a.dataset.wa)});
+document.getElementById("priv").onclick=function(){document.getElementById("dlg").showModal()};
+
+/* animações de entrada */
+try{
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserver" in window){
+var sel="section:not(.hero) h2,section:not(.hero) .lead,.demo,.card,details,.tiles div,.fields div,.photo,.form,.final .row,.insta .row,section:not(.hero)>.wrap>.btn,footer .wrap>*";
+var seen=new Map();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+document.querySelectorAll(sel).forEach(function(el){
+var n=seen.get(el.parentNode)||0;seen.set(el.parentNode,n+1);
+el.style.setProperty("--d",(n%5)*0.1+"s");el.classList.add("rv");
+el.addEventListener("transitionend",function h(ev){if(ev.propertyName==="opacity"&&el.classList.contains("in")){el.classList.remove("rv","in");el.style.removeProperty("--d");el.removeEventListener("transitionend",h)}});
+io.observe(el)})}
+}catch(x){document.querySelectorAll(".rv").forEach(function(el){el.classList.remove("rv")})}
+
+/* agendamento */
+var AGENDA={diasSemana:[0,1,2,3,4,5,6],horarios:null,bloqueios:[]};
+/* Para definir a agenda real: diasSemana (0=domingo), horarios ["09:00","10:00"], bloqueios ["2026-12-25"]. Com horarios definidos, só eles aparecem. */
+var MESES=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+var bk=document.getElementById("bk"),panes=bk.querySelectorAll(".pane"),bars=bk.querySelectorAll(".bsteps li");
+var opts=bk.querySelectorAll(".opt"),mode="",sel="",slot="",ref="",send=document.getElementById("send");
+function pad(n){return String(n).padStart(2,"0")}
+var today=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Porto_Velho"}).format(new Date());
+var vy=+today.slice(0,4),vm=+today.slice(5,7)-1,ty=vy,tm=vm;
+function v(id){return document.getElementById(id).value.trim()}
+function fmt(x){var p=x.split("-");return p[2]+"/"+p[1]+"/"+p[0]}
+function modeTxt(){return mode==="online"?"Consulta nutricional online":"Consulta nutricional presencial"}
+function go(n){panes.forEach(function(p,i){p.hidden=i!==n});bars.forEach(function(b,i){b.classList.toggle("on",i<=n)});
+if(n===2){cal();times()}if(n===3)build();if(n>0)bk.scrollIntoView({block:"start"})}
+function choose(m,adv){mode=m;opts.forEach(function(o){var on=o.dataset.mode===m;o.classList.toggle("sel",on);o.setAttribute("aria-pressed",on)});
+document.getElementById("modeLbl").textContent=modeTxt();if(adv)go(1)}
+opts.forEach(function(o){o.addEventListener("click",function(){choose(o.dataset.mode,true)})});
+document.querySelectorAll("a[data-mode]").forEach(function(a){a.addEventListener("click",function(){choose(a.dataset.mode.toLowerCase(),true)})});
+bk.querySelectorAll("[data-go]").forEach(function(b){b.addEventListener("click",function(){go(+b.dataset.go)})});
+function err(id,msg){var e=document.getElementById("e-"+id),i=document.getElementById(id);e.textContent=msg;if(i)i.setAttribute("aria-invalid",msg?"true":"false");return !msg}
+["nome","tel","mail"].forEach(function(id){document.getElementById(id).addEventListener("input",function(){err(id,"")})});
+function validate(){
+var r=[err("nome",(v("nome").length<5||v("nome").split(/\s+/).length<2)?"Informe seu nome completo.":""),
+err("tel",v("tel").replace(/\D/g,"").length<10?"Informe um WhatsApp com DDD, por exemplo (11) 90000-0000.":""),
+err("mail",!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v("mail"))?"Informe um e-mail válido.":"")];
+var ids=["nome","tel","mail"],bad=ids.filter(function(_,i){return !r[i]})[0];
+if(bad)document.getElementById(bad).focus();return !bad}
+document.getElementById("dados").addEventListener("submit",function(e){e.preventDefault();if(validate())go(2)});
+/* calendário */
+function cal(){
+var g=document.getElementById("cg");g.textContent="";
+document.getElementById("mtitle").textContent=MESES[vm]+" "+vy;
+document.getElementById("prev").disabled=vy*12+vm<=ty*12+tm;
+var first=new Date(vy,vm,1).getDay(),n=new Date(vy,vm+1,0).getDate();
+for(var i=0;i<first;i++)g.appendChild(document.createElement("span"));
+for(var d=1;d<=n;d++){(function(d){
+var iso=vy+"-"+pad(vm+1)+"-"+pad(d),b=document.createElement("button");
+b.type="button";b.textContent=d;
+b.disabled=iso<today||AGENDA.diasSemana.indexOf(new Date(vy,vm,d).getDay())<0||AGENDA.bloqueios.indexOf(iso)>-1;
+if(iso===today)b.classList.add("today");
+if(iso===sel)b.classList.add("sel");
+b.setAttribute("aria-label",d+" de "+MESES[vm]+(b.disabled?", indisponível":""));
+b.onclick=function(){sel=iso;slot="";err("slot","");cal();times()};
+g.appendChild(b)})(d)}}
+document.getElementById("prev").onclick=function(){vm--;if(vm<0){vm=11;vy--}cal()};
+document.getElementById("nextm").onclick=function(){vm++;if(vm>11){vm=0;vy++}cal()};
+function times(){
+var c=document.getElementById("chips"),h=document.getElementById("slotHint");c.textContent="";
+if(!sel){h.textContent="Escolha um dia no calendário.";return}
+h.textContent=AGENDA.horarios?"Horários para "+fmt(sel)+":":"Horário de preferência para "+fmt(sel)+":";
+(AGENDA.horarios||["Manhã","Tarde","Noite","Sem preferência"]).forEach(function(t){
+var b=document.createElement("button");b.type="button";b.className="chip"+(t===slot?" sel":"");b.textContent=t;b.setAttribute("aria-pressed",t===slot);
+b.onclick=function(){slot=t;err("slot","");times()};c.appendChild(b)})}
+document.getElementById("toReview").onclick=function(){
+if(!sel){err("slot","Escolha uma data.");return}
+if(!slot){err("slot","Escolha um horário de preferência.");return}
+err("slot","");go(3)};
+function msg(){
+var m="Olá, Bruna! Gostaria de solicitar um agendamento de consulta nutricional.\n\nNome: "+v("nome")+"\nModalidade: "+(mode==="online"?"online":"presencial")+"\nData desejada: "+fmt(sel)+"\nHorário de preferência: "+slot+"\nWhatsApp para contato: "+v("tel")+"\nE-mail: "+v("mail");
+if(v("obj"))m+="\nObjetivo principal: "+v("obj");
+if(v("obs"))m+="\nObservações: "+v("obs");
+return m+"\nReferência da solicitação: "+ref+"\n\nSe possível, gostaria de confirmar a disponibilidade desse horário. Obrigado(a)!"}
+function newRef(){var a=new Uint8Array(3);(window.crypto||{getRandomValues:function(x){for(var i=0;i<x.length;i++)x[i]=Math.random()*256}}).getRandomValues(a);
+return "AG-"+today.replace(/-/g,"").slice(2)+"-"+Array.prototype.map.call(a,function(x){return x.toString(16).padStart(2,"0")}).join("").toUpperCase()}
+function build(){
+var r=[["Atendimento",modeTxt()],["Data desejada",fmt(sel)],["Horário de preferência",slot],["Nome",v("nome")],["WhatsApp",v("tel")],["E-mail",v("mail")]];
+if(v("obj"))r.push(["Objetivo",v("obj")]);if(v("obs"))r.push(["Observações",v("obs")]);
+var ul=document.getElementById("review");ul.textContent="";
+r.forEach(function(x){var li=document.createElement("li"),b=document.createElement("b");b.textContent=x[0];li.appendChild(b);li.appendChild(document.createTextNode(x[1]));ul.appendChild(li)})}
+document.getElementById("confirm").onclick=function(){
+ref=newRef();document.getElementById("ref").textContent="Referência: "+ref;send.href=wa(msg());go(4)};
+document.getElementById("again").onclick=function(){document.getElementById("dados").reset();mode="";sel="";slot="";
+opts.forEach(function(o){o.classList.remove("sel");o.setAttribute("aria-pressed","false")});go(0)};
+})();
+</script>
+</body>
+</html>
